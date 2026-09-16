@@ -441,7 +441,9 @@ def _apply_response_attributes(
             _modality_tokens(response, "usage_metadata.prompt_tokens_details")
         )
         invocation.set_output_tokens(
-            _modality_tokens(response, "usage_metadata.candidates_tokens_details")
+            _modality_tokens(
+                response, "usage_metadata.candidates_tokens_details"
+            )
         )
         invocation.set_cache_read_input_tokens(
             _modality_tokens(response, "usage_metadata.cache_tokens_details")
